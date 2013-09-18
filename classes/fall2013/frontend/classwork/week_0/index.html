@@ -1,0 +1,56 @@
+<!-- 
+  HackYale Front-end Development
+  Week 0 Coursework | by Rafi
+  
+  This is a sample, bare-bones HTML document with a stylesheet linked in.
+  To see how this looks, open this file in Google Chrome.
+
+  Extra:
+  If you're tired of typing HTML already, look up something called Zen coding,
+  and install the Sublime plugin.
+-->
+
+
+<!-- When we use HTML5 (which everyone does now), we indicate this to the
+browser with <!DOCTYPE html> (note that capitalization in HTML never
+matters, but we capitalize to follow convention). 
+For a longer description of doc types: http://stackoverflow.com/questions/255470/what-are-the-different-doctypes-in-html-and-what-do-they-mean
+-->
+<!DOCTYPE html>
+<!-- Every document is enclosed in an html tag. -->
+<html>
+  <!-- Remember the head contains meta data (or data about the file), NEVER
+  content that is rendered on the page itself. -->
+  <head>
+    <title>My first page</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- A basic link -->
+    <a href="./about.html">My about page</a>
+    <!-- A more confusing link -->
+    <a href="http://placekitten.com/200/400" target="_blank">
+      <div>Hello world</div>
+      <img src="http://placekitten.com/200/300" alt="">
+    </a>
+    <!-- Different styles of h1's. Check style.css. -->
+    <h1 class="blue">
+      HackYale is awesome!
+    </h1>
+    <h1 class="red">
+      Kittens are super nice.
+    </h1>
+    <h1>
+      The last one
+    </h1>
+    <!-- Different kinds of inputs -->
+    <input type="email" placeholder="default text">
+    <input type="number">
+    <select>
+      <option value="hey">Option 1</option>
+      <option value="hey">Option 2</option>
+    </select>
+    <input type="submit">
+    <textarea cols="30" rows="10"></textarea>
+  </body>
+</html>

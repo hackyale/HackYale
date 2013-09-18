@@ -1,0 +1,35 @@
+/*
+ * Stylesheets define what your HTML elements look like. You can choose which
+ * elements you want to style with a tag selector ('body' or 'h1'), or a class
+ * selector ('.blue').
+ * Remember declarations with a class selector take precedence over those made
+ * with a tag selector!
+ *
+ * Extra:
+ * If you're tired of typing CSS already, look up SASS CSS, and see if you can
+ * get it to work.
+ */
+
+body {
+  background-color: green;
+}
+
+h1 {
+  color: blue;
+  background-color: red;
+  font-style: italic;
+}
+
+.blue {
+  color: blue;
+  border: 1pt solid navajowhite;
+}
+
+.red {
+  color: purple;
+  font-size: 100px;
+}
+
+h1 {
+  color: pink;
+}
