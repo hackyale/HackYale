@@ -1,0 +1,6 @@
+[submodule "classes/fall2013/frontend/homework/private/arsalan.sufi/HackYale-Homework"]
+	path = classes/fall2013/frontend/homework/private/arsalan.sufi/HackYale-Homework
+	url = https://github.com/arsalansufi/HackYale-Homework.git
+[submodule "classes/fall2013/frontend/homework/private/miles.calabresi/HackYale-Homework"]
+	path = classes/fall2013/frontend/homework/private/miles.calabresi/HackYale-Homework
+	url = https://github.com/milescalabresi/HackYale-Homework.git
