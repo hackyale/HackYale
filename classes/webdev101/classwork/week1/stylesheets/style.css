@@ -1,0 +1,68 @@
+/* 
+ * If you want to know what a line of code does, Google it!
+ * If you want to know how to make something look a certain
+ * way, Google it!
+ * Comments in CSS are done with surrounding with /* and * /
+ */
+
+/* By Rafi (rafi@hackyale.com) for WebDev101 2.5.2014 */ 
+
+body {
+  font-family: 'Helvetica', sans-serif; /* Lots of font options! */
+  font-size: 16px;
+  background-color: #fafafa;
+  /* We'll learn about the following next week */
+  margin: 0; 
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+a:hover { /* What does this line do? */
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+img {
+  border: 1pt solid #ddd;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Getting fancy! What does having more than one tag do? */
+a img:hover {
+  box-shadow: 0 0 5px #aaa;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Conventionally, we put our tag style declarations (eg 'img' or 'a')
+   before our class declarations */
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.fancy {
+  box-shadow: 0 0 5px #ddd;
+}
+
+.small-img {
+  height: 50px;
+}
+
+
