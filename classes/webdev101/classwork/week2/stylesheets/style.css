@@ -1,0 +1,44 @@
+body {
+  /* Default body has margin and padding sometimes */
+  margin: 0; 
+  padding: 0;
+  background: black;
+  font: 16px/20px 'Helvetica' sans-serif;
+  /* This line is the same as writing:
+   * font-size: 16px;
+   * line-height: 20px;
+   * font-family: 'Helvetica' sans-serif;
+   */
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Overriding default */
+ul {
+  padding-left: 0;
+}
+
+.container {
+  width: 960px;
+}
+
+.background {
+  border: 1pt solid #1e8564;
+  background-color: #09c170;
+  padding: 10px;
+}
+
+.i-b {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  border: 1pt solid #eee;
+  background-color: #ddd;
+  line-height: 100px; /* To center one line vertically */
+  text-align: center;
+  font-size: 30px;
+}
