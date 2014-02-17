@@ -1,0 +1,71 @@
+body {
+	background-image:url('sewfiabackground.jpg');
+	font-family: "helvetica new";
+	font-size: 16px;
+}
+
+h1 {
+	font-family: cursive;
+	font-size:30px;
+}
+
+div.header {
+	font-family: cursive;
+	color: #5d6b76;
+	background-color: black;
+	padding:10px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.container {
+	width:955px;
+	padding:5px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#5d6b76;
+
+}
+
+div.li {
+	display: inline-block;
+	position: relative;
+	right:18px;
+	left:18px;
+	width:296px;
+	height:auto;
+	font-size:30px;
+}
+
+.li a:link, a:visited a:hover{
+	color:#ffffff;
+}
+
+.li a:active {
+	color:#da295d;
+}
+
+IMG.displayed {
+	width:296px;
+	height:220px;
+}
+
+a:link {
+	color:#5d6b76;
+}
+
+a:visited {
+	color: #5d6b76;
+}
+
+a:hover {
+	color: #ffffff;
+	}
+
+a:active {
+	color: #da295d;
+}

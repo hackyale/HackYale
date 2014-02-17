@@ -1,0 +1,22 @@
+body {
+  background-color: #fafafa;
+  font-family: "Lucida Grande";
+  font-size: 16px;
+  margin: 0;
+}
+/* This is a CSS comment */
+p {
+  color: rgb(189, 27, 27);
+  background-color: white;
+  padding: 10px;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.info {
+  background-color: #eee;
+  border: 1pt solid green;
+}
