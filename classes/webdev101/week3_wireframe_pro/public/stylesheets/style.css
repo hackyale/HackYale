@@ -1,0 +1,199 @@
+/* 
+  The CSS for a of HackYale homework 2: 
+  creating http://hackyale.com/pdfs/homework_2_wireframe.pdf.
+  The 'pro' implemenation
+  Created by Rafi Khan. February 18, 2013.
+  http://hackyale.com
+
+  Note that styles are organized by part of page, and confusing styles are commented.
+
+*/
+/* General style rules */
+
+body {
+  margin: 0; padding: 0;
+  font: 16px/20px 'Open Sans';
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  /* Browser specific styles. Google for more info */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Top part of page */
+
+.top {
+  background-color: #cce;
+  color: black;
+  height: 70px;
+}
+
+.name {
+  font-size: 30px;
+  /* To center text vertically, make the line-height same as container height
+  (in this case, the height of .top) */
+  line-height: 70px;
+  float: left;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+}
+
+.name > img {
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: #1b4fdd;
+}
+.white {
+  color: white;
+}
+
+.links {
+  float: right;
+  line-height: 70px;
+}
+
+.link {
+  display: inline-block;
+  margin-left: 15px;
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+.link:hover {
+  color:white;
+}
+
+/* Middle part */
+
+.kicker {
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+}
+
+/* Talking points */
+
+.bottom {
+  background-color: #eee;
+  padding-bottom: 30px;
+}
+
+.talking-points {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.point {
+  display: inline-block;
+  width: 296px;
+  vertical-align: top;
+  margin-right: 36px;
+}
+.point:last-child {
+  margin-right: 0;
+}
+
+.point > img {
+  width: 100%;
+}
+
+/* Specify that .read-more is an a tag to be clear */
+a.read-more {
+  color: #2688DD;
+}
+a.read-more:hover {
+  color: #0906dd;
+  text-decoration: underline;
+}
+
+/* Blog */
+
+.blog {
+  display: inline-block;
+  width: 628px;
+  margin-right: 36px;
+  vertical-align: top;
+}
+
+.blog-post-title {
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 1;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+}
+.blog-post-info {
+  font-style: italic;
+}
+.blog-post-text {
+  text-align: justify;
+}
+.blog-post-img {
+  width: 100%;
+}
+
+/* Small column on right */
+
+.small-images {
+  display: inline-block;
+  width: 296px;
+}
+
+.small-image {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1pt solid #999;
+}
+
+.small-image:last-child {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Using the child selector to avoid having to put classes on all these images */
+.small-image > img {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.small-image > .content {
+  display: inline-block;
+  width: 200px;
+}
+
+.small-image-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 120%;
+  line-height: 1;
+}
+

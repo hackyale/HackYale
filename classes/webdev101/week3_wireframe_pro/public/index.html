@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!-- Declare a language to be specific. Not so important, but good form -->
+<html lang="en-US">
+<head>
+  <!-- a charset, or Character Set, defines what kinds of characters can show
+  up on your browser (chinese glyphs, hieroglyphs, etc). Again, most browsers
+  figure this out for themselves, but it's good form to have -->
+  <meta charset="UTF-8">
+  <!-- All pages should have a title, something to go in the browser tab -->
+  <title>We Believe in Nothing!</title>
+  <!-- A 'favicon' the little image next to the title on your browser tab 
+  Putting images in an 'images' folder keeps you organized -->
+  <link rel="shortcut icon" href="./images/nothing-icon.png" />
+  <!-- Importing stylesheets -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+  <!-- Making a 'stylesheets' directory for stylesheets to stay organized -->
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+<body>
+  <!-- top part of the page, background color light blue -->
+  <div class="top">
+    <!-- add a container to center content -->
+    <div class="container">
+      <div class="name">
+        <!-- Use spans to add some spice! In this case, the HTML is clearer 
+        without line breaks around the <span>. -->
+        <img src="./images/nothing-icon.png" />
+        <span class="blue">T</span>he 
+        <span class="white">N</span>othing 
+        <span class="red">P</span>arty
+      </div>
+      <!-- 'links' is floated to the right -->
+      <div class="links">
+        <a href="./index.html">
+          <div class="link">We</div>
+        </a>
+        <a href="./index.html">
+          <div class="link">Believe</div>
+        </a>
+        <a href="./index.html">
+          <div class="link">Nothing</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- middle part, white background -->
+  <div class="middle">
+    <!-- Again, center content -->
+    <div class="container">
+      <h1 class="kicker shadow">You know what's cool? Nothing.</h1>
+    </div>
+  </div>
+  <!-- bottom bg color: grey -->
+  <div class="bottom">
+    <div class="container">
+      <!-- The three columns -->
+      <div class="talking-points">
+        <div class="point">
+          <h3>Thing 1</h3>
+          <!-- placekitten.com is a great place to get placeholder images! 
+          This one is going to be 350 pixels by 220 pixels -->
+          <img src="http://placekitten.com/350/220" alt="">
+          <p>How lame!</p>
+          <!-- Adding target='_blank' to a <a> makes the link open in a new
+          tab. I don't want people to navigate away from my page :) -->
+          <a class='read-more' href="http://irs.gov" target="_blank">Read more >></a>
+        <!-- We put </div><div ...> on the same line to avoid the 'space 
+        problem' (below) when lining things up with display: inline-block -->
+        </div><div class="point">
+          <h3>Thing 2</h3>
+          <img src="http://placekitten.com/350/220" alt="">
+          <p>So bourgeois!</p>
+          <a class='read-more' href="http://irs.gov" target="_blank">Read more >></a>
+        </div><div class="point">
+          <h3>Thing 3</h3>
+          <img src="http://placekitten.com/350/220" alt="">
+          <p>I would never be caught with this in a million years.</p>
+          <a class='read-more' href="http://irs.gov" target="_blank">Read more >></a>
+        </div>
+      </div>
+      <!-- The bottom part of bottom -->
+      <div class="showcase">
+        <div class="blog">
+          <h2>Nothing is really cool!</h2>
+          <!-- Though blog-post serves no structural purpose right now, the 
+          blog looked like something that would have multiple posts like the
+          one it has now. We create blog-post in anticipation of that -->
+          <div class="blog-post">
+            <!-- The class names below show that these elements are in the blog
+            -post class. This makes finding them in the HTML and CSS a easy -->
+            <img class='blog-post-img' src="http://placekitten.com/700/360" alt="">
+            <p class="blog-post-title">The NoBlog: an intro</p>
+            <p class="blog-post-info">Posted 18 hours ago</p>
+            <p class="blog-post-text">
+              No content here.
+            </p>
+          </div>
+        <!-- Again, dealing with the 'space problem' (described below) -->
+        </div><div class="small-images">
+          <div class="small-image">
+            <h2>Don't believe!</h2>
+            <img src="http://placekitten.com/80/80" alt=""><div class="content">
+              <h5 class="small-image-header">This</h5>
+              <p>Seriously</p>
+            </div>
+          </div>
+          <div class="small-image">
+            <img src="http://placekitten.com/80/80" alt=""><div class="content">
+              <h5 class="small-image-header">Or this</h5>
+              <p>I mean it.</p>
+            </div>
+          </div>
+          <div class="small-image">
+            <img src="http://placekitten.com/80/80" alt=""><div class="content">
+              <h5 class="small-image-header">Definitely not this</h5>
+              <p>Emphasis on the 'definitely'</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+
+The 'space problem' comes up when you try to place things side by side with display: inline-block. 
+
+Suppose you have the following structure:
+  <div class='outer'>
+    <div class="inner">
+      content 1
+    </div>
+    <div class="inner">
+      content 2
+    </div>
+    <div class="inner">
+      content 3
+    </div>
+  </div>
+
+And the following style (in style.css):
+
+  .outer {
+    width: 300px;
+  }
+  .inner {
+    display: inline-block;
+    width: 100px;
+  }
+
+You would expect that the three .inner's line up side by side, but you'll find that the last one drops to it's own line. This is because there are spaces (literal space characters, like the one you get from pressing the space bar) between the divs. These space characters take up around 2px (depending on your font-size), which make the total width 3*100 (for the three .inner's) + 2*2 (for the space characters). This is why the browser thinks there isn't enough space for the third .inner next to second .inner, and puts it on it's own row. 
+
+To solve this, we write:
+  <div class='outer'>
+    <div class="inner">
+      content 1
+    </div><div class="inner">
+      content 2
+    </div><div class="inner">
+      content 3
+    </div>
+  </div>
+
+If you think putting </div><div ...> is ugly, then you can instead do in your style:
+
+  .outer {
+    font-size: 0; /* Makes the space (and all other) characters have 0 width */
+    width: 300px;
+  }
+
+But be sure to reset your font-size in .inner, or your content won't show up!
+  .inner {
+    font-size: 14px; /* Or whatever value it was before .outer */
+    display: inline-block;
+    width: 100px;
+  }
+
+Personally, I don't like changing font-sizes back and forth- it's much easier to just use the </div><div> solution.
+
+-->
+
+
+
+

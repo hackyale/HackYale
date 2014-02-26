@@ -1,0 +1,4 @@
+source :rubygems
+gem 'rack'
+# You may need to install bundler. To do that, type in your
+# shell: sudo gem install bundler
