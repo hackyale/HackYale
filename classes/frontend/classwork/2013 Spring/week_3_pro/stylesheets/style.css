@@ -11,6 +11,7 @@
 /* General style rules */
 
 body {
+  margin: 0; padding: 0;
   font: 16px/20px 'Open Sans';
   width: 100%;
 }
